@@ -25,7 +25,7 @@ namespace :aoc do
   task :create_lib_files, [:day] do |_, args|
     day = args.day
     day_padded = day.to_s.rjust(2, '0')
-    page = Nokogiri::HTML(URI.parse("https://adventofcode.com/2019/day/#{day}").read)
+    page = Nokogiri::HTML(URI.parse("https://adventofcode.com/2020/day/#{day}").read)
     day_name = page.css('article.day-desc > h2').text.gsub('---', '').gsub("Day #{day}:", '').strip
 
     # html2markdown
@@ -39,7 +39,7 @@ namespace :aoc do
 
       require_relative '../solution'
 
-      module Day#{day}
+      module Day#{day_padded}
         class Solution < Solution
 
           def solve_part01
@@ -54,7 +54,7 @@ namespace :aoc do
     DYNAMIC
 
     puts '=> Lib:'
-    lib_path = "lib/day#{day}"
+    lib_path = "lib/day#{day_padded}"
     unless File.exist?(lib_path)
       puts " Creating '#{lib_path}' ..."
       Dir.mkdir lib_path
@@ -92,7 +92,7 @@ namespace :aoc do
 
       require 'test_helper'
 
-      module Day#{day}
+      module Day#{day_padded}
         class SolutionTest < Minitest::Test
 
           def setup
@@ -115,12 +115,12 @@ namespace :aoc do
     DYNAMIC
 
     puts '=> Tests:'
-    test_dir = "test/day#{day}"
-    solution_test_path = "test/day#{day}/solution_test.rb"
+    test_dir = "test/day#{day_padded}"
+    solution_test_path = "test/day#{day_padded}/solution_test.rb"
 
     unless File.exist?(test_dir)
       puts " Creating #{test_dir} ..."
-      Dir.mkdir "test/day#{day}"
+      Dir.mkdir test_dir
     end
 
     unless File.file?(solution_test_path)
@@ -129,6 +129,6 @@ namespace :aoc do
     end
 
     puts ' Updating test_helper ...'
-    File.write('test/test_helper.rb', "require 'day#{day}/solution'\n", mode: 'a')
+    File.write('test/test_helper.rb', "require 'day#{day_padded}/solution'\n", mode: 'a')
   end
 end
