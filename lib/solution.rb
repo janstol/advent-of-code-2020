@@ -4,19 +4,24 @@ class Solution
 
   attr_reader :input_path
 
-  def initialize(input = 'input.txt')
-    @input_path = File.join(
+  def initialize(input_path = nil)
+    default_path = File.join(
       File.dirname(File.dirname(File.absolute_path(__FILE__))),
-      'lib', self.class.name.split('::').first.downcase, input
+      'lib', self.class.name.split('::').first.downcase, 'input.txt'
     )
+    @input_path = input_path || default_path
   end
 
   def input
     @input ||= File.readlines(input_path).map(&:chomp)
   end
 
-  def each_input(&block)
-    File.foreach(input_path, &block)
+  def each_input_line
+    index = 0
+    File.foreach(input_path) do |line|
+      yield(line, index)
+      index += 1
+    end
   end
 
   def solve_part01
