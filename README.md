@@ -6,3 +6,4 @@
 
 | Day | Name | Solution | Input |
 | --- | ---  | ---      | ---   |
+| 01 | [Report Repair](https://adventofcode.com/2020/day/1) | [solution.rb](lib/day01/solution.rb) | [input.txt](lib/day01/input.txt) |

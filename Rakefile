@@ -79,7 +79,7 @@ namespace :aoc do
     end
 
     puts '=> Updating main README.md ...'
-    File.write('README.md', "| #{day_padded} | [#{day_name}](https://adventofcode.com/2020/day/#{day}) | [solution.rb](lib/day#{day}/solution.rb) | [input.txt](lib/day#{day}/input.txt) |", mode: 'a')
+    File.write('README.md', "| #{day_padded} | [#{day_name}](https://adventofcode.com/2020/day/#{day}) | [solution.rb](lib/day#{day_padded}/solution.rb) | [input.txt](lib/day#{day_padded}/input.txt) |", mode: 'a')
   end
 
   desc 'Create test file for day, update test_helper'
