@@ -4,3 +4,4 @@ require 'minitest/autorun'
 
 require 'solution'
 require 'day01/solution'
+require 'day02/solution'

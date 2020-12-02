@@ -13,7 +13,7 @@ class Solution
   end
 
   def input
-    @input ||= File.readlines(input_path).map(&:chomp)
+    @input ||= File.readlines(input_path).map(&:chomp).reject { |c| c == '' }
   end
 
   def each_input_line
