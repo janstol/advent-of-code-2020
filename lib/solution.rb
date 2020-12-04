@@ -2,7 +2,7 @@
 
 class Solution
 
-  attr_reader :input_path
+  attr_reader :input_path, :input_raw
 
   def initialize(input_path = nil)
     default_path = File.join(
@@ -14,6 +14,10 @@ class Solution
 
   def input
     @input ||= File.readlines(input_path).map(&:chomp).reject { |c| c == '' }
+  end
+
+  def input_raw
+    @input_raw ||= File.read(input_path)
   end
 
   def each_input_line
