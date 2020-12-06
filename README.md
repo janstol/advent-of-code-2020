@@ -11,3 +11,4 @@
 | 03 | [Toboggan Trajectory](https://adventofcode.com/2020/day/3) | [solution.rb](lib/day03/solution.rb) | [input.txt](lib/day03/input.txt) |
 | 04 | [Passport Processing](https://adventofcode.com/2020/day/4) | [solution.rb](lib/day04/solution.rb) | [input.txt](lib/day04/input.txt) |
 | 05 | [Binary Boarding](https://adventofcode.com/2020/day/5) | [solution.rb](lib/day05/solution.rb) | [input.txt](lib/day05/input.txt) |
+| 06 | [Custom Customs](https://adventofcode.com/2020/day/6) | [solution.rb](lib/day06/solution.rb) | [input.txt](lib/day06/input.txt) |
