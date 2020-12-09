@@ -13,3 +13,4 @@
 | 05 | [Binary Boarding](https://adventofcode.com/2020/day/5) | [solution.rb](lib/day05/solution.rb) | [input.txt](lib/day05/input.txt) |
 | 06 | [Custom Customs](https://adventofcode.com/2020/day/6) | [solution.rb](lib/day06/solution.rb) | [input.txt](lib/day06/input.txt) |
 | 07 | [Handy Haversacks](https://adventofcode.com/2020/day/7) | [solution.rb](lib/day07/solution.rb) | [input.txt](lib/day07/input.txt) |
+| 08 | [Handheld Halting](https://adventofcode.com/2020/day/8) | [solution.rb](lib/day08/solution.rb) | [input.txt](lib/day08/input.txt) |
