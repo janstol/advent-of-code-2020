@@ -16,3 +16,4 @@
 | 08 | [Handheld Halting](https://adventofcode.com/2020/day/8) | [solution.rb](lib/day08/solution.rb) | [input.txt](lib/day08/input.txt) |
 | 09 | [Encoding Error](https://adventofcode.com/2020/day/9) | [solution.rb](lib/day09/solution.rb) | [input.txt](lib/day09/input.txt) |
 | 10 | [Adapter Array](https://adventofcode.com/2020/day/10) | [solution.rb](lib/day10/solution.rb) | [input.txt](lib/day10/input.txt) |
+| 11 | [Seating System](https://adventofcode.com/2020/day/11) | [solution.rb](lib/day11/solution.rb) | [input.txt](lib/day11/input.txt) |
