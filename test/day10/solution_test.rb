@@ -24,20 +24,17 @@ module Day10
     end
 
     def test_day10_part02_example
-      skip 'TODO'
       @solution = Solution.new 'test/day10/input.txt'
       assert_equal 8, @solution.solve_part02
     end
 
     def test_day10_part02_example2
-      skip 'TODO'
       @solution = Solution.new 'test/day10/input2.txt'
       assert_equal 19208, @solution.solve_part02
     end
 
     def test_day10_part02_solution
-      skip 'TODO'
-      assert_equal 0, @solution.solve_part02
+      assert_equal 386869246296064, @solution.solve_part02
     end
   end
 end
