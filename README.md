@@ -18,3 +18,4 @@
 | 10 | [Adapter Array](https://adventofcode.com/2020/day/10) | [solution.rb](lib/day10/solution.rb) | [input.txt](lib/day10/input.txt) |
 | 11 | [Seating System](https://adventofcode.com/2020/day/11) | [solution.rb](lib/day11/solution.rb) | [input.txt](lib/day11/input.txt) |
 | 12 | [Rain Risk](https://adventofcode.com/2020/day/12) | [solution.rb](lib/day12/solution.rb) | [input.txt](lib/day12/input.txt) |
+| 13 | [Shuttle Search](https://adventofcode.com/2020/day/13) | [solution.rb](lib/day13/solution.rb) | [input.txt](lib/day13/input.txt) |

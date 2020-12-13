@@ -43,11 +43,11 @@ namespace :aoc do
         class Solution < Solution
 
           def solve_part01
-            raise NotImplementedError
+            0
           end
 
           def solve_part02
-            raise NotImplementedError
+            0
           end
         end
       end
@@ -99,16 +99,22 @@ namespace :aoc do
             @solution = Solution.new
           end
 
+          def test_day#{day_padded}_part01_example
+            @solution = Solution.new 'test/day#{day_padded}/input.txt'
+            assert_equal 0, @solution.solve_part01
+          end
+
           def test_day#{day_padded}_part01_solution
-            assert_raises NotImplementedError do
-              @solution.solve_part01
-            end
+            assert_equal 0, @solution.solve_part01
+          end
+
+          def test_day#{day_padded}_part02_example
+            @solution = Solution.new 'test/day#{day_padded}/input.txt'
+            assert_equal 0, @solution.solve_part02
           end
 
           def test_day#{day_padded}_part02_solution
-            assert_raises NotImplementedError do
-              @solution.solve_part02
-            end
+            assert_equal 0, @solution.solve_part02
           end
         end
       end
