@@ -14,7 +14,8 @@
 # require_relative 'day12/solution'
 # require_relative 'day13/solution'
 # require_relative 'day14/solution'
-require_relative 'day15/solution'
+# require_relative 'day15/solution'
+require_relative 'day16/solution'
 
 (1..25).each do |i|
   day = i.to_s.rjust(2, '0')
